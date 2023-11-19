@@ -1,0 +1,327 @@
+@font-face {
+    font-family: esquivel;
+    src: url(../fonts/EsquivelRegular.ttf);
+}
+
+html {
+    /*See: https://www.sitepoint.com/understanding-and-using-rem-units-in-css/*/
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif, serif;
+    margin: 0;
+}
+
+body.tmpl-year {
+    background-color: #000;
+}
+
+
+.wrapper {
+    /*border: solid 1px #000;*/
+    /*background-color: aqua;*/
+    /*
+    justify-content: center;
+    text-align: center;
+    max-width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(50%, 400px);
+    grid-template-rows: minmax(10vh, auto);
+    */
+}
+
+.screen-reader {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+a:focus {
+    outline:5px solid orangered;
+}
+
+header.masthead {
+    font-family: esquivel, Arial, Helvetica, sans-serif;
+    font-size: 5em;
+    background-color: white;
+    color: orange;
+    text-shadow: 4px 4px 4px black;
+    text-align: center;
+}
+
+.tmpl-year header.masthead {
+    background-color: black;
+}
+
+header.masthead a {
+    text-decoration: none;
+    -webkit-text-stroke: 1px yellow;
+}
+
+header.masthead a:visited {
+    color: orange;
+}
+
+main {
+    /*border: solid 1px #000;*/
+    text-align: center;
+}
+
+main h1 {
+    font-size: 4em;
+}
+
+main p {
+    font-size: 2em;
+}
+
+.tmpl-year main h1,  .tmpl-year main p {
+    color: white;
+}
+
+.main-content {
+/*
+    Pinterest style
+    ===============
+    column-count: 3;
+    column-gap: 1em;
+*/
+
+    margin: 0;
+    /*border: solid 1px #000;*/
+
+
+    /* From here: 
+        https://css-tricks.com/an-auto-filling-css-grid-with-max-columns/
+    */
+    /**
+    * User input values.
+    */
+    --grid-layout-gap: 5px;
+    --grid-column-count: 2;
+    --grid-item--min-width: 400px;
+
+    /**
+    * Calculated values.
+    */
+    --gap-count: calc(var(--grid-column-count) - 1);
+    --total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
+    --grid-item--max-width: calc((100% - var(--total-gap-width)) / var(--grid-column-count));
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
+    grid-gap: var(--grid-layout-gap);
+    
+/*
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));
+*/
+}
+
+.main-content article {
+/*
+    Pinterest style
+    ===============
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
+*/
+    /*border: solid 1px #000;*/
+    text-align: center;
+}
+
+.tmpl-home .main-content {
+    margin: 10% 0;
+}
+
+
+.main-content article header {
+    font-size: 2.5em;
+}
+
+.tmpl-post article img,
+.main-content article img {
+    width: 100%;
+    aspect-ratio: 4/3; /* remove for pinterest style */
+}
+
+.tmpl-post article {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.tmpl-post article h1 {
+    font-size: 2.5em;
+    color: black;
+    display: inline-block;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 30px 0 0 0;
+}
+
+.tmpl-post article h2 {
+    font-size: 1.2em;
+}
+
+.main-content article h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    background-color:#000;
+    color: white;
+    margin: 0 0 0 0;
+    border: 0;
+    padding: 0;
+}
+
+ .main-content article h2 a, .main-content article h2 a:visited {
+    color: inherit;
+    background-color: #000;
+}
+
+.main-content article h2 a:hover, 
+.main-content article h2 a:focus {
+    color:yellow;
+}
+
+/*
+.main-content article:has(a:hover), 
+.main-content article:has(a:focus) {
+    transform: scale3d(1.01, 1.01, 1.01);
+    border: yellow 2px solid;
+}
+*/
+
+.main-content article h2:has(a:hover),
+.main-content article h2:has(a:focus) {
+    background-color: #000;
+}
+
+.main-content .folders a,
+.main-content article h2 a {
+    position:relative;
+    display: inline-block;
+}
+
+.main-content .folders a span {
+    width: 100%;
+    font-size: 3em;
+    font-weight: bolder;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-content article h2 a span {
+    /*width: 100%;*/
+    background: rgba(0, 0, 0, 0.4);
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+
+    /*
+        Text over image css from here
+        https://www.w3schools.com/howto/howto_css_image_text.asp
+    */
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    /*
+    https://code-boxx.com/position-text-over-image-html/
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+*/
+}
+
+.main-content article h2 a:hover span,
+.main-content article h2 a:focus span {
+    border-top: 1px solid yellow;
+    border-bottom: 1px solid yellow;
+}
+/*
+div#folders6 {    
+    margin: 10% 0 0 0;
+}
+
+div#folderPreS6 {
+    margin: 10% 0 0 0;
+}
+*/
+div.folders p {
+    margin: 1px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    color: black;
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+footer a {
+    padding: 15px;
+}
+
+footer a:visited{
+    color: black;
+}
+
+.tmpl-year footer {
+    background-color: black;
+    color: white;
+}
+
+.tmpl-year footer a:visited{
+    color: white;
+}
+
+.folders img {
+    width:15em;
+}
+
+.skip-link {
+    position: absolute;
+    left: 3px;
+    top: 7px;
+    border: 0;
+    font-size: x-large;
+    font-weight: 600;
+    line-height: normal;
+    padding: 2px;
+    background-color: yellow;
+    color: #000000;
+    margin: 0;
+    transform: translateX(-200%);
+    transition: transform 0.3s;
+}
+
+.skip-link a {
+    text-decoration: none;
+    padding:2px;
+}
+.skip-link:focus-within {
+    transform: translateX(0%);
+    transition: transform 0.3s;
+}
+
+.nodisplay {
+    display: none;
+}

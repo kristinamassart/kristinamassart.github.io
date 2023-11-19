@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="/feed/pretty-feed-v3.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Kristina Massart</title>
+	<subtitle>Creating and watching music</subtitle>
+	
+	<link href="https://www.kristinamassartswebsite.com/feed/index.xml" rel="self"/>
+	<link href="https://www.kristinamassartswebsite.com/" rel="alternate" type="text/html"/>
+	<updated>2023-10-15T23:20:30Z</updated>
+	<id>https://www.kristinamassartswebsite.com/</id>
+	<author>
+		<name>Kristina Massart</name>
+		<email>kristina.massart@gmail.com</email>
+	</author>
+	
+	
+	<entry>
+		<title>Riverside</title>
+		<link href="https://www.kristinamassartswebsite.com/posts/S6/riverside/"/>
+		<updated>2023-10-15T23:20:30Z</updated>
+		<id>https://www.kristinamassartswebsite.com/posts/S6/riverside/</id>
+		<content type="html">&lt;p&gt;My thoughsts on Riverside at the Rockal in Luxembourg.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Arctic Monkeys</title>
+		<link href="https://www.kristinamassartswebsite.com/posts/preS6/arctic-monkeys/"/>
+		<updated>2023-07-05T07:20:30Z</updated>
+		<id>https://www.kristinamassartswebsite.com/posts/preS6/arctic-monkeys/</id>
+		<content type="html">&lt;p&gt;My thoughts on Arctic Monkeys.&lt;/p&gt;
+&lt;p&gt;Lorem ipsum blah di blah. Lorem ipsum blah di blah. Lorem ipsum blah di blah. Lorem ipsum blah di blah. Lorem ipsum blah di blah. Lorem ipsum blah di blah. Lorem ipsum blah di blah. Lorem ipsum blah di blah. Lorem ipsum blah di blah. Lorem ipsum blah di blah.&lt;/p&gt;
+&lt;p&gt;Lorem ipsum blah di blah. Lorem ipsum blah di blah. Lorem ipsum blah di blah. Lorem ipsum blah di blah. Lorem ipsum blah di blah. Lorem ipsum blah di blah. Lorem ipsum blah di blah. Lorem ipsum blah di blah. Lorem ipsum blah di blah. Lorem ipsum blah di blah. Lorem ipsum blah di blah. Lorem ipsum blah di blah. Lorem ipsum blah di blah.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Rock Werchter 2023</title>
+		<link href="https://www.kristinamassartswebsite.com/posts/preS6/rock-werchter-2023/"/>
+		<updated>2023-07-01T09:20:30Z</updated>
+		<id>https://www.kristinamassartswebsite.com/posts/preS6/rock-werchter-2023/</id>
+		<content type="html">&lt;p&gt;My thoughts on Rock Werchter 2023.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Beebop Plovdiv</title>
+		<link href="https://www.kristinamassartswebsite.com/posts/preS6/beebop-plovdiv/"/>
+		<updated>2023-04-06T23:32:05Z</updated>
+		<id>https://www.kristinamassartswebsite.com/posts/preS6/beebop-plovdiv/</id>
+		<content type="html">&lt;p&gt;My thoughts on Hot Club de Plovdiv at the Beebop Cafe in Plovdiv.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Dock in Absolute</title>
+		<link href="https://www.kristinamassartswebsite.com/posts/preS6/dock-in-absolute/"/>
+		<updated>2022-08-26T01:32:05Z</updated>
+		<id>https://www.kristinamassartswebsite.com/posts/preS6/dock-in-absolute/</id>
+		<content type="html">&lt;p&gt;My thoughst on Dock in Abslute at Kulturhafen Zurlauben in Trier.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Rock Werchter 2022</title>
+		<link href="https://www.kristinamassartswebsite.com/posts/preS6/rock-werchter-2022/"/>
+		<updated>2022-07-02T06:20:30Z</updated>
+		<id>https://www.kristinamassartswebsite.com/posts/preS6/rock-werchter-2022/</id>
+		<content type="html">&lt;p&gt;My thoughst on the Rock Werchter 2022 festival, just north of Brussels.&lt;/p&gt;
+</content>
+	</entry>
+</feed>
