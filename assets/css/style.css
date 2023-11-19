@@ -147,12 +147,14 @@ main p {
     font-size: 2.5em;
 }
 
+.tmpl-page article img,
 .tmpl-post article img,
 .main-content article img {
     width: 100%;
     aspect-ratio: 4/3; /* remove for pinterest style */
 }
 
+.tmpl-page article img,
 .tmpl-post article {
     margin: 0 auto;
     max-width: 600px;
