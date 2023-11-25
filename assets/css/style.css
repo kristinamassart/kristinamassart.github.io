@@ -126,6 +126,34 @@ main p {
 */
 }
 
+main nav {
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+main nav span {
+    margin-right: 10px;
+    color: white;
+}
+
+main nav a:visited,
+main nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+}
+
+main nav a.current:visited,
+main nav a.current,
+main nav a.active:visited,
+main nav a.active {
+    color: yellow;
+    border-top: solid 1px yellow;
+    border-bottom: solid 1px yellow;
+}
+
 .main-content article {
 /*
     Pinterest style
