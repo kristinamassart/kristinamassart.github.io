@@ -13,7 +13,7 @@ body {
     margin: 0;
 }
 
-body.tmpl-year {
+body.tmpl-list {
     background-color: #000;
 }
 
@@ -57,13 +57,14 @@ header.masthead {
     text-align: center;
 }
 
-.tmpl-year header.masthead {
+.tmpl-list header.masthead {
     background-color: black;
 }
 
 header.masthead a {
     text-decoration: none;
     -webkit-text-stroke: 1px yellow;
+    color: orange;
 }
 
 header.masthead a:visited {
@@ -83,7 +84,7 @@ main p {
     font-size: 2em;
 }
 
-.tmpl-year main h1,  .tmpl-year main p {
+.tmpl-list main h1,  .tmpl-list main p {
     color: white;
 }
 
@@ -95,7 +96,7 @@ main p {
     column-gap: 1em;
 */
 
-    margin: 0;
+    margin: 7px;
     /*border: solid 1px #000;*/
 
 
@@ -106,8 +107,8 @@ main p {
     * User input values.
     */
     --grid-layout-gap: 5px;
-    --grid-column-count: 2;
-    --grid-item--min-width: 400px;
+    --grid-column-count: 3;
+    --grid-item--min-width: 200px;
 
     /**
     * Calculated values.
@@ -140,7 +141,7 @@ main nav a:visited,
 main nav a {
     margin-right: 10px;
     text-decoration: none;
-    color: white;
+    color: black;
     border-top: solid 1px white;
     border-bottom: solid 1px white;
 }
@@ -173,6 +174,14 @@ main nav a.active {
 
 .main-content article header {
     font-size: 2.5em;
+}
+
+.main-content article header a {
+    outline: 1px solid #ccc;
+}
+
+.main-content article header a:focus {
+    outline: 5px solid orangered;
 }
 
 .tmpl-page article img,
@@ -307,6 +316,7 @@ footer {
 }
 
 footer a {
+    color: black;
     padding: 15px;
 }
 
@@ -314,12 +324,12 @@ footer a:visited{
     color: black;
 }
 
-.tmpl-year footer {
+.tmpl-list footer {
     background-color: black;
     color: white;
 }
 
-.tmpl-year footer a:visited{
+.tmpl-list footer a:visited{
     color: white;
 }
 

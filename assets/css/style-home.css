@@ -1,0 +1,142 @@
+@font-face {
+    font-family: esquivel;
+    src: url(../fonts/EsquivelRegular.ttf);
+}
+
+html {
+    /*See: https://www.sitepoint.com/understanding-and-using-rem-units-in-css/*/
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif, serif;
+    margin: 0;
+    background-color: #000;
+}
+
+.screen-reader {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+a:focus {
+    outline:5px solid orangered;
+}
+
+header {
+    max-width: 400px;
+    position: absolute;
+    top:20vh;
+    left:20vw;
+}
+
+header h1 {
+    font-size: 1em;
+    margin: 10px;
+} 
+
+header h1 a {
+    font-family: esquivel, Arial, Helvetica, sans-serif;
+    font-size: 5em;
+    color: orange;
+    text-shadow: 4px 4px 4px black;
+    text-align: center;
+    text-decoration: none;
+    -webkit-text-stroke: 1px yellow;
+    color: orange;
+}
+
+header a:visited {
+    color: orange;
+}
+
+header nav {
+    font-size: 2em;
+    color: orange;
+}
+
+header nav a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    font-weight: 800;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+main {
+    text-align: center;
+}
+
+main h1 {
+    font-size: 4em;
+}
+
+main p {
+    font-size: 2em;
+}
+
+main,
+main p,
+main p img {
+    width: 100%;
+}
+
+main p {
+    border:0;
+    margin: 0;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin: 20px 0;
+    font-size: 2em;
+    position: absolute;
+    bottom: 0;
+}
+
+footer a {
+    color: white;
+    padding: 15px;
+}
+
+footer a:visited{
+    color: white;
+}
+
+.skip-link {
+    position: absolute;
+    left: 3px;
+    top: 7px;
+    border: 0;
+    font-size: x-large;
+    font-weight: 600;
+    line-height: normal;
+    padding: 2px;
+    background-color: yellow;
+    color: #000000;
+    margin: 0;
+    transform: translateX(-200%);
+    transition: transform 0.3s;
+}
+
+.skip-link a {
+    text-decoration: none;
+    padding:2px;
+}
+.skip-link:focus-within {
+    transform: translateX(0%);
+    transition: transform 0.3s;
+}
+
+.nodisplay {
+    display: none;
+}
